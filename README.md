@@ -1,4 +1,4 @@
-Valheim Server Setup Script
+Valheim Server Setup Script for Ubuntu
 ===========================
 
 This bash script automates the setup of a Valheim server on Ubuntu, including prompts for server information and the creation of a start script.
