@@ -51,4 +51,6 @@ Instructions
         
     *   Public IP Address
         
-    *   Connection Information (IP Address and Port)
+    *   Connection Information (IP Address and Port)\
+  
+5.  Finally, port forward ports 2456-2457 on your router, unless manually specified in your start_server.sh copy.
