@@ -1,8 +1,8 @@
 #!/bin/bash
 
 echo "Please provide the following information:"
-read -p "Server Name: " server_name
-read -s -p "Server Password: " server_password
+read -p "New Server Name: " server_name
+read -s -p "New Server Password: " server_password
 echo
 
 # Add multiverse repository
