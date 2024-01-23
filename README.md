@@ -11,9 +11,9 @@ Instructions
     
 2.  You will be prompted to enter the following information:
     
-    *   Server Name
+    *   New Server Name
         
-    *   Server Password
+    *   New Server Password
         
 3.  The script will then proceed to:
     
@@ -21,7 +21,7 @@ Instructions
         
     *   Install required packages
         
-    *   Allow necessary ports through UFW (Uncomplicated Firewall)
+    *   Allow necessary ports (2456-2457) through UFW (Uncomplicated Firewall)
         
     *   Create a new user named "valheim"
         
@@ -45,7 +45,7 @@ Instructions
     
     *   Server Name
         
-    *   Server Password (masked for security)
+    *   Server Password
         
     *   Valheim Server Process ID
         
