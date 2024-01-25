@@ -43,8 +43,8 @@ steamcmd +@sSteamCmdForcePlatformType linux +force_install_dir /path/to/server +
 # Copy start_server.sh to the desired filename
 cp start_server.sh "$new_filename"
 # Swap values in the resulting sh for $new_filename
-sudo sed -i "s/-name \"My server\"/-name \"$server_name\"/g" "$new_filename"
-sudo sed -i "s/-password \"secret\"/-password \"$new_password\"/g" "$new_filename"
+sed -i "s/-name \"My server\"/-name \"$server_name\"/g" "$new_filename"
+sed -i "s/-password \"secret\"/-password \"$new_password\"/g" "$new_filename"
 # Run the new server executable and redirect logs to a file
 ./"$new_filename" > server_logs.txt 2>&1 &
 # Print server information
