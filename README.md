@@ -12,11 +12,11 @@ Usage
 
 2.  Make the script executable.
 
-    ```chmod +x script.sh   ```
+    ```chmod +x valheim_setup.sh   ```
 
 3.  Run the script.  
 
-    ```./script.sh   ```
+    ```./valheim_setup.sh   ```
 
 4.  Follow the prompts to enter the desired server executable name, server name, and a new password.
     
