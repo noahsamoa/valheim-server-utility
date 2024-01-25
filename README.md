@@ -1,56 +1,46 @@
 Valheim Server Setup Script for Ubuntu
 ===========================
 
-This bash script automates the setup of a Valheim server on Ubuntu, including prompts for server information and the creation of a start script.
+This script automates the setup of a Valheim game server on a Linux system. It installs necessary packages, creates a Valheim user, sets up the server directory, and configures the server with user-provided details.
 
-Instructions
-------------
+Usage
+-----
 
-1.  Run the script: 
-```./valheim_setup.sh```
+1.  Open a terminal and navigate to the directory containing the script.
     
-2.  You will be prompted to enter the following information:
+    ```cd /path/to/script   ```
+
+2.  Make the script executable.
+
+    ```chmod +x script.sh   ```
+
+3.  Run the script.  
+
+    ```./script.sh   ```
+
+4.  Follow the prompts to enter the desired server executable name, server name, and a new password.
     
-    *   New Server Name
-        
-    *   New Server Password
-        
-3.  The script will then proceed to:
+Important Notes
+---------------
+
+*   This script assumes a Debian-based Linux distribution and uses **apt** for package management. Adjustments may be needed for other distributions.
     
-    *   Add the multiverse repository
-        
-    *   Install required packages
-        
-    *   Allow necessary ports (2456-2457) through UFW (Uncomplicated Firewall)
-        
-    *   Create a new user named "valheim"
-        
-    *   Switch to the "valheim" user
-        
-    *   Create a directory for the Valheim server
-        
-    *   Install and configure SteamCMD
-        
-    *   Force install directory and update the Valheim server
-        
-    *   Create and configure a start script
+*   The script creates a **valheim** user and sets up the server directory under **/home/valheim/server**.
     
-    *   Create a systemd service for the Valheim server
+*   It installs required packages such as **software-properties-common**, **lib32gcc-s1**, and **steamcmd**.
     
-    *   Enable and start the systemd service
-        
-    *   Run the Valheim server in the background
-        
-4.  After completion, the script will display the following information:
+*   The Valheim server executable is configured using the provided server name and password.
     
-    *   Server Name
-        
-    *   Server Password
-        
-    *   Valheim Server Process ID
-        
-    *   Public IP Address
-        
-    *   Connection Information (IP Address and Port)
-  
-5.  Finally, port forward ports 2456-2457 on your router, unless manually specified in your start_server.sh copy.
+*   The script redirects server logs to **server\_logs.txt** and runs the server in the background.
+    
+*   Server information including IP, port, name, and password is displayed upon completion.
+    
+*   To terminate the server, use the command:
+    ```sudo kill <SERVER_PID>```
+    Replace with the actual server process ID.
+
+*   Monitor server logs in real-time with:
+    
+    ```tail -f /home/valheim/server/server_logs.txt   ```
+
+Feel free to customize the script or seek assistance if needed. Enjoy your Valheim server!
