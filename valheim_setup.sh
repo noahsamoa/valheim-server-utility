@@ -13,12 +13,12 @@ install_package() {
     fi
 }
 #create valheim user if applicable
-is_user_exists() {
+does_user_exist() {
     id "$1" &> /dev/null
 }
 create_user() {
     local username="$1"
-    if ! is_user_exists "$username"; then
+    if ! does_user_exist "$username"; then
         sudo adduser "$username"
         echo "User $username created."
     else
