@@ -1,4 +1,4 @@
-Valheim Server Setup Script for Ubuntu
+Valheim Server Setup Script (for Debian systems)
 ===========================
 
 This script automates the setup of a Valheim game server on a Linux system. It installs necessary packages, creates a Valheim user, sets up the server directory, and configures the server with user-provided details.
